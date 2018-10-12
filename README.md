@@ -1,6 +1,6 @@
 # TvSeriesReminder
-Reminds about the next episode of all the favourite TV series of mutiple users.
-Requires Email and comma seperated list of tv shows. 
+Reminds about the next episode of all the favourite TV series of mutiple users by emailing them.
+Requires Email and comma seperated list of tv shows as input. Data is stored in a local sqlite database. 
 
 # Modules
 
@@ -29,7 +29,7 @@ Requires Email and comma seperated list of tv shows.
 **:param** show_name: Tv series name string
 **:return:** String to be emailed informing about given show's next episode.
 
-	* ### [TempDB](https://github.com/awesome-arjun11/TvSeriesReminder/blob/35b3d0e368d29a236e80760428dd045e05b3a61b/utility.py#L42)
+	* ### [TempDB](https://github.com/awesome-arjun11/TvSeriesReminder/blob/35b3d0e368d29a236e80760428dd045e05b3a61b/utility.py#L42) :	(Mysql support to be added soon, thats why temp.)
 		* **TempDB.insert_users(db_buffer)**
 			Inserts new email and tv series data to db, if email exists fallback to 	updating tv series list  
 **:param** db_buffer: List of tuples with email and tv series data for each user
